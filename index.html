@@ -65,8 +65,9 @@ function calcTotal(){
 	document.form.txtTotal.value=strTotal;
 }
 </script>
-<script language="javascript">window.defaultStatus="Welcome to Fish Cove!";
-	</script>
+<table>
+	<form>
+		<td>
 
 	<h3 align="center">Click button to change Color Background!</h3>
 <form align="center" name="frmColor" action="javascript:void(0);"><center>
@@ -84,7 +85,13 @@ function calcTotal(){
        	onClick="selectColor('Silver')">
 <input type="submit" value="Red" name="bR"
        	onClick="selectColor('Red')">
-	
-	
-	</center></form>
-	</body></html>
+<script language="javascript">
+	function selectColor(selectColor){
+		document.bgColor=selectColor;
+	}
+	</td>
+	</table>
+	</form>
+	</center>
+	</body>
+	</html>
